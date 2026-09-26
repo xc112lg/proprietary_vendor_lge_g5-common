@@ -233,7 +233,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/camera.msm8996.so"],
-			shared_libs: ["libshim_camera", "liblog", "libhardware", "libutils", "libcutils", "libdl", "libsync", "libmmcamera_interface", "libmmjpeg_interface", "libui", "libcamera_metadata", "libqdMetaData", "libqservice", "libbinder", "libts_face_beautify_hal", "libts_detected_face_hal", "libHDR", "libmorpho_image_stab31", "libmorpho_superzoom", "libarcsoft_beauty_shot", "libandroid", "libgui", "libEGL", "libGLESv2", "libfilm_emulation", "libbwfocuspeaking", "libc++", "libc", "libm", ],
+			shared_libs: ["libshim_camera", "liblog", "libhardware", "libutils", "libcutils", "libdl", "libsync", "libmmcamera_interface", "libmmjpeg_interface", "libui", "libcamera_metadata", "libqdMetaData", "libqservice", "libbinder", "libts_face_beautify_hal", "libts_detected_face_hal", "libHDR", "libmorpho_image_stab31", "libmorpho_superzoom", "libarcsoft_beauty_shot", "libshims_android", "libgui", "libEGL", "libGLESv2", "libfilm_emulation", "libbwfocuspeaking", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -540,7 +540,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libarcsoft_beauty_shot.so"],
-			shared_libs: ["libc", "libm", "libstdc++_vendor", "libdl", "liblog", "libandroid", ],
+			shared_libs: ["libc", "libm", "libstdc++_vendor", "libdl", "liblog", "libshims_android", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2190,7 +2190,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libfilm_emulation.so"],
-			shared_libs: ["liblog", "libjnigraphics", "libGLESv3", "libEGL", "libstdc++_vendor", "libm", "libc", "libdl", ],
+			shared_libs: ["liblog", "libGLESv3", "libEGL", "libstdc++_vendor", "libm", "libc", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -3740,7 +3740,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera2_stats_modules.so"],
-			shared_libs: ["libdl", "libcutils", "libmmcamera2_mct", "libmmcamera2_is", "libmmcamera2_stats_algorithm", "libui", "libgui", "libandroid", "libutils", "libmmcamera_dbg", "liblog", "libhidlbase", "libhidltransport", "android.frameworks.sensorservice@1.0", "libmmcamera2_q3a_core", "libsensor1", "libc++", "libc", "libm", ],
+			shared_libs: ["libdl", "libcutils", "libmmcamera2_mct", "libmmcamera2_is", "libmmcamera2_stats_algorithm", "libui", "libgui", "libshims_android", "libutils", "libmmcamera_dbg", "liblog", "libhidlbase", "libhidltransport", "android.frameworks.sensorservice@1.0", "libmmcamera2_q3a_core", "libsensor1", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
