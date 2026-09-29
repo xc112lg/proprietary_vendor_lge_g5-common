@@ -233,7 +233,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/camera.msm8996.so"],
-			shared_libs: ["libshim_camera", "liblog", "libhardware", "libutils", "libcutils", "libdl", "libsync", "libmmcamera_interface", "libmmjpeg_interface", "libui", "libcamera_metadata", "libqdMetaData", "libqservice", "libbinder", "libts_face_beautify_hal", "libts_detected_face_hal", "libHDR", "libmorpho_image_stab31", "libmorpho_superzoom", "libarcsoft_beauty_shot", "libshims_android", "libgui", "libEGL", "libGLESv2", "libfilm_emulation", "libbwfocuspeaking", "libc++", "libc", "libm", ],
+			shared_libs: ["libshim_camera", "libcamera_metadata_helper", "liblog", "libhardware", "libutils", "libcutils", "libdl", "libsync", "libmmcamera_interface", "libmmjpeg_interface", "libui", "libcamera_metadata", "libqdMetaData", "libqservice", "libbinder", "libts_face_beautify_hal", "libts_detected_face_hal", "libHDR", "libmorpho_image_stab31", "libmorpho_superzoom", "libarcsoft_beauty_shot", "libshims_android", "libgui", "libEGL", "libGLESv2", "libfilm_emulation", "libbwfocuspeaking", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
